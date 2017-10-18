@@ -21,7 +21,7 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
-                                <navigationItem title="Wisata Buah" id="iyE-QM-mSO"/>
+                                <navigationItem title="Wisata Pantai" id="iyE-QM-mSO"/>
                             </items>
                         </navigationBar>
                         <prototypes>
@@ -39,6 +39,9 @@
                             <outlet property="delegate" destination="tGm-G6-5jf" id="1Pz-NG-0XK"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="2Ok-te-y5a" kind="modal" identifier="passDataDetail" id="PCa-zV-cx1"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuH-r8-0XX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYq-TH-x6n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2154" y="369"/>
+            <point key="canvasLocation" x="2356" y="402"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Qud-rC-Lfe">
@@ -127,16 +130,21 @@
                         <color key="backgroundColor" red="1" green="0.48414130828354762" blue="0.082934459659748549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="vpd-Qz-Iam"/>
                     </view>
+                    <connections>
+                        <outlet property="imgGambar" destination="DwN-ga-eGt" id="9Wd-HB-V10"/>
+                        <outlet property="labelNamaBuah" destination="Kqa-Fn-ObD" id="HH4-Rg-9PJ"/>
+                        <outlet property="labelNamaWisata" destination="Kqa-Fn-ObD" id="1RU-9L-xdh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qzW-KY-mG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3014" y="33"/>
+            <point key="canvasLocation" x="3162" y="33"/>
         </scene>
     </scenes>
     <resources>
         <image name="Apple" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oZ1-ey-32d"/>
+        <segue reference="Xc3-Va-ufA"/>
     </inferredMetricsTieBreakers>
 </document>
